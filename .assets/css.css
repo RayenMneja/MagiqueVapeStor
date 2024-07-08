@@ -36,12 +36,12 @@
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(0, 100%, 71%) 0%, 
-    hsla(241, 100%, 69%, 0) 50%
+    hsla(241, 100%, 69%, 0.276) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
     hsla(0, 100%, 71%, 0.251) 0%, 
-    hsla(240, 100%, 68%, 0) 59.86%
+    hsla(240, 100%, 68%, 0.361) 59.86%
   ), hsl(240, 2%, 83%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -51,6 +51,13 @@
   --text-gradient-yellow: linear-gradient(
     to right, 
     hsl(0, 100%, 72%), 
+    hsl(240, 100%, 68%)
+  );
+  --vegas-gradient-yellow: linear-gradient(
+    to right, 
+    hsl(0, 100%, 72%),
+    hsl(240, 100%, 68%),
+    hsl(0, 100%, 72%),
     hsl(240, 100%, 68%)
   );
 
@@ -64,7 +71,7 @@
   --white-1: hsl(0, 0%, 0%);
   --white-2: hsl(0, 0%, 2%);
   --orange-yellow-crayola: hsl(0, 100%, 72%);
-  --vegas-gold: hsl(0, 54%, 58%);
+  --vegas-gold: hsl(0, 0%, 15%);
   --light-gray: hsl(0, 0%, 16%);
   --light-gray-70: hsla(0, 0%, 16%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 49%);
@@ -164,10 +171,16 @@ body { background: var(--smoky-black); }
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-
-.sidebar,
 article {
   background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+.sidebar{
+  background: var(--vegas-gradient-yellow);
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
@@ -423,7 +436,7 @@ main {
 }
 
 .contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
+  color: var(--smoky-black);
   font-size: var(--fs-7);
 }
 
@@ -795,8 +808,8 @@ main {
   margin-bottom: 7px;
 }
 
-.timeline-list span,#sangour {
-  color: var(--vegas-gold);
+.timeline-list span,#Magique {
+  color: var(--smoky-black);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
