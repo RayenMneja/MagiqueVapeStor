@@ -16,8 +16,12 @@ getIpAddress()
 let cart = [];
 let items = '';
 let itemsCount = {};
+
+
 let flous=[0,5,10,10,10,10,10,10,10,10,10,10];
 let produit=["cotton","coil","Dark shigeri","shigeri","hizagiri","bloody shigeri","ragnarok x","oni","phoenex","purple vodka"];
+
+
 let somme = 0;
 let conteur= 0;
         function addToCart(productId) {
