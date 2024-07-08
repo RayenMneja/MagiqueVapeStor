@@ -16,18 +16,21 @@ getIpAddress()
 let cart = [];
 let items = '';
 let itemsCount = {};
-let flous=[10,20,66,40,55,60,70,35,200];
-let produit=["a5thar 7chich","a5tharna3ne3i","a7mar ch3chou3i","a7mar","asfar mible7","asfar","azra9","gray","kharawi"];
+let flous=[0,5,10,10,55,60,70,35,200];
+let produit=["cotton","coil","Dark chigeri","a7mar","asfar mible7","asfar","azra9","gray","kharawi"];
 let somme = 0;
+let conteur= 0;
         function addToCart(productId) {
            Swal.fire({
-            title: "Multiple inputs",
+            title: produit[productId],
             html: `
-              <input id="swal-input1" class="swal2-input">
+              <input id="swal-input1" class="swal2-input" type="number" value="1">
+
             `,
             focusConfirm: false,
             preConfirm: () => {
-                nb =document.getElementById("swal-input1").value,
+                nb =document.getElementById("swal-input1").value;
+                conteur+=Number(nb);
                 items+=nb;
                 console.log(items);
                 cart.push(productId);
@@ -37,14 +40,29 @@ let somme = 0;
                 const t = somme;
                 somme=t+v;
                 s.innerHTML = 'total: dt '+somme;
-                
-                
+                document.getElementById("conteur").innerHTML=String(conteur); 
             }
           });
             
             
             
         }
+        function addToCarts(productId) {
+          
+               items+=1;
+               console.log(items);
+               cart.push(productId);
+               renderCart();
+               var s= document.getElementById('h3');
+               const v= flous[productId];
+               const t = somme;
+               somme=t+v;
+               s.innerHTML = 'total: dt '+somme;
+          
+           
+           
+           
+       }
         function finCommend(){
             let commend ='';
             jj=0;
@@ -214,34 +232,6 @@ jQuery(document).ready(function($){
   document.getElementById('shop2').setAttribute('style', 'display: none');
   document.getElementById('panie').setAttribute('style', 'display: none');
 });
-function btn1(){
-
-  document.getElementById('accueil').setAttribute('style', 'display: block');
-  document.getElementById('shop1').setAttribute('style', 'display: none');
-  document.getElementById('shop2').setAttribute('style', 'display: none');
-  document.getElementById('panie').setAttribute('style', 'display: none');
-}
-function btn2(){
-
-  document.getElementById('shop1').setAttribute('style', 'display: block');
-  document.getElementById('accueil').setAttribute('style', 'display: none');
-  document.getElementById('shop2').setAttribute('style', 'display: none');
-  document.getElementById('panie').setAttribute('style', 'display: none');
-}
-function btn3(){
-
-  document.getElementById('shop2').setAttribute('style', 'display: block');
-  document.getElementById('accueil').setAttribute('style', 'display: none');
-  document.getElementById('shop1').setAttribute('style', 'display: none');
-  document.getElementById('panie').setAttribute('style', 'display: none');
-}
-function btn4(){
-
-  document.getElementById('panie').setAttribute('style', 'display: block');
-  document.getElementById('accueil').setAttribute('style', 'display: none');
-  document.getElementById('shop1').setAttribute('style', 'display: none');
-  document.getElementById('shop2').setAttribute('style', 'display: none'); 
-}
 
 
 

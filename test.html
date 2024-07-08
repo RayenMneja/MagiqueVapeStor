@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sangour - Personal Portfolio</title>
+  <title>Magique Vape store</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/coding logo white.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/magique.png" type="image/x-icon">
 
   <!--
     - custom css link
@@ -39,7 +39,7 @@
 
     <aside class="sidebar" data-sidebar>
 
-      <div class="sidebar-info"> <span id="Magique">Magique Vape Stor</span>
+      <div class="sidebar-info"> <span id="Magique">Magique Vape Store</span>
 
         
           <img src=".assets/magique.png" alt="phone" width="100" style="border-radius: 10%;">
@@ -94,7 +94,8 @@
       -->
 
       <nav class="navbar">
-
+        <div style="text-align: center;" ><b style="font-size: x-small; display: inline-block; ">&copy; 2024 <a href="https://rayenmneja.github.io/Myportflio/" style="color: #b7b7b7;display: inline-block;">Rayen Mnejja</a>. All rights reserved.</b></div>
+        
         <ul class="navbar-list">
 
           <li class="navbar-item">
@@ -106,6 +107,7 @@
           </li>
 
           <li class="navbar-item">
+            <p id="conteur" style="background-color: red; border-radius: 25%; color: #fff; width:15px; font-size: small; position: absolute; text-align: center;"></p>
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -124,102 +126,42 @@
       <article class="about  active" data-page="about">
 
        
-
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
         <!--
           - testimonials
         -->
 
         <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 article-title">Welcom</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/téléchargement.jpeg" alt="Daniel lewis" width="60px" data-testimonials-avatar style="border-radius: 20%;">
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>EL rayeb</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    El Rayeb is a partnership between a group of friends who are experts in the world of programming. We established it to ensure the high quality of its websites. 
-                  </p>
-                </div>
-
+              <div class="content-card" id="2" data-testimonials2-item>
+                
+                <div class="service-icon-box">
+                    <img src="./assets/images/téléchargement.jpeg" alt="Daniel lewis" width="60px" data-testimonials2-avatar style="border-radius: 20%;">
+                  </div>
               </div>
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-5.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>my team</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    My team possesses a wide range of skills in various fields, including website development, data analysis, and graphic design.
-                  </p>
-                </div>
-
+              <div class="content-card" id="2" data-testimonials2-item>
+                
+                <div class="service-icon-box">
+                    <img src="./assets/images/téléchargement.jpeg" alt="Daniel lewis" width="60px" data-testimonials2-avatar style="border-radius: 20%;">
+                  </div>
               </div>
             </li>
 
           </ul>
+          <br>
+          <div class="content-card" id="2" data-testimonials2-item>
+                
+            <div class="service-icon-box">
+                <img src="./assets/images/téléchargement.jpeg" alt="Daniel lewis" width="60px" data-testimonials2-avatar style="border-radius: 20%;">
+              </div>
+          </div>
 
         </section>
 
@@ -285,7 +227,7 @@
   
   
 
-        <section class="skill">
+        <section class="skill" >
           <ul class="filter-list">
 
             <li class="filter-item">
@@ -359,7 +301,7 @@
                 </div>
 
               </div>
-              <button class="form-btn" type="submit" onclick="addToCart(0)" >
+              <button class="form-btn" type="submit" onclick="addToCart(2)" >
                     <ion-icon name="paper-plane"></ion-icon>
                     <span>Send Message</span>
                   </button>
@@ -506,10 +448,9 @@
                                                               <button class="form-btn" type="submit" onclick="addToCart(2)" >
                                                                     <ion-icon name="paper-plane"></ion-icon>
                                                                     <span>Send Message</span>
-                                                                  </button>
+                                                                </button>
                                                                 </div></li>
               </ul>
-              
             </div>
               
         <div class="modal-container" data-modal2-container>
@@ -572,11 +513,12 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <button class="form-btn"  onclick="addToCarts(0)">+ cotton  <span style="border-radius: 5px; background-color: rgba(87, 87, 87, 0.83);padding: 5px; color: #fff; font-size: small;">gratuit</span> <code style="font-size:small; color:rgba(87, 87, 87, 0.83);">avec flacon</code></button>
+          <button class="form-btn"  onclick="addToCarts(1)">+ coil</button>
 
           <form method="post" name="contact-form" id="aa"  data-form>
             <div class="container" id="cart">
-              <h2>Cart</h2>
+              <h2 class="h2 article-title">Cart</h2>
               <button class="btn" id="btnrest" onclick="restall()">rest</button>
               <form method="post" class="form" name="contact-form">
               <table class="table">
@@ -587,7 +529,6 @@
                       </tr>
                           <input type="text" class="form-input" name="name"  placeholder="full name" required>
                           <input type="tel" class="form-input" name="tel"  placeholder="number" required>
-                          <input type="email" class="form-input" name="email" placeholder="name@example.com" required>
                   </thead>
                   <tbody inputmode="td" id="cart-body">
                   </tbody>
@@ -630,6 +571,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
 
 </body>
 
