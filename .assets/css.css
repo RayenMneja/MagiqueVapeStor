@@ -70,11 +70,11 @@
   --smoky-black: hsl(0, 0%, 93%);
   --white-1: hsl(0, 0%, 0%);
   --white-2: hsl(0, 0%, 2%);
-  --orange-yellow-crayola: hsl(0, 100%, 72%);
+  --orange-yellow-crayola: hsl(331, 59%, 55%);
   --vegas-gold: hsl(0, 0%, 15%);
   --light-gray: hsl(0, 0%, 16%);
   --light-gray-70: hsla(0, 0%, 16%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 49%);
+  --bittersweet-shimmer: hsl(321, 43%, 49%);
 
   /**
    * typography
@@ -180,7 +180,7 @@ article {
   z-index: 1;
 }
 .sidebar{
-  background: var(--vegas-gradient-yellow);
+  background-image: url(/photo/magique\ vape\ store\ b.png);
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
